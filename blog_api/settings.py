@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '+c0zntup%2*zgp26_gae$d=xq%%=_z$sz+gg%r6ze91+vkcf$4'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'blog_api.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'blog_api_db',
-        'USER': 'eldiyar',
-        'PASSWORD': '197119962002',
-        'HOST': 'localhost',
-        'PORT': 5432
+        'ENGINE': '...',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT':
 
     }
 }
