@@ -18,7 +18,7 @@ class PostSerializer(serializers.ModelSerializer):
     def to_representation(self, instance):
         representation = super().to_representation(instance)
         representation['author'] = instance.author.email
-        # если в категории всвечиваетсч цифры то мы пишем это
+        # если в категории  цифры то мы пишем это
         representation['category'] = CategorySerializer(instance.category).data
         representation['images'] = PostImageSerializer(instance.images.all(), many=True, context=self.context).data
         return representation

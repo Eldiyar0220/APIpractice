@@ -58,12 +58,12 @@ from .permissions import  IsPostAuthor
 #     queryset = Post.objects.all()
 #     serializer_class =  PostSerializer
 
-#здесь мы реалтзуем пагинацию
+#здесь мы реализуем пагинацию
 class MyPaginationClass(PageNumberPagination):
     page_size = 3
     def get_paginated_response(self, data):
         for i in range(self.page_size):
-       # print(data[1])#здесь мы окгранияения делаем с текстом
+       # print(data[1])#здесь мы ограничения делаем с текстом
             text = data[i]['text']
             data[i]['text'] = text[:10] + '...'
         #print(data[1]['text'])

@@ -3,7 +3,7 @@ from rest_framework import serializers
 
 from account.models import MyUser
 
-#Здесь мы создаем чтобы пароль захешировать
+#Здесь мы создаем чтобы пароль хешировал
 #TODO: register serializer
 from account.utils import send_activation_code
 
